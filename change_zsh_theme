@@ -1,0 +1,5 @@
+#!/bin/zsh
+# To run this script - execute 'source change_zsh_theme <theme_name>'
+sed -i "/^ZSH_THEME=/s/\".\+\"/\"$1\"/" ~/.zshrc
+source ~/.zshrc
+

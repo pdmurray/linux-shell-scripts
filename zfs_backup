@@ -1,0 +1,9 @@
+
+# external drive is called 'backupext'
+
+zpool import backupext
+zfs snapshot -r files@backup
+zfs send -Rvp files@backup | zfs recv -ev backupext
+zfs destroy -r files@backup
+zpool scrub backupext
+zpool export backupext

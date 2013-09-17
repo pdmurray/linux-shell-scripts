@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#su - mcuser -c "script /dev/null ; screen -r survival-mc"
+sudo -u mcuser -H sh -c "script /dev/null"
+
+# press ctrl-d-a to detach
