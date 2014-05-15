@@ -89,7 +89,7 @@ def update_enom():
     updatestringbase = 'https://dynamic.name-services.com/interface.asp?command=SetDNSHost&zone=%(domain)s&DomainPassword=%(password)s' % settings
 
 
-    hosts = {'@':'A'}
+    hosts = {'home':'A'}
 
     # Build the rest of the update string
     for key in hosts:
